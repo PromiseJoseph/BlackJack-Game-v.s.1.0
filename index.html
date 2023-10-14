@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjackgame</title>
+    
+    <link rel="stylesheet" a href="css/blackjack.css"></link>
+</head>
+<body>
+<div class="main-container">
+    <div class="header">
+        <h2 id="blackjack">BLACK JACK</h2>
+
+    </div>
+    <div class="item">
+        <div class="item-header">
+           
+             <p class="content"> Click on start game to draw a new card</p> 
+             <p class="cards">Cards:</p>
+             <p class="sum">Sum:</p>
+        </div>
+
+        <div class="item-body">
+             <button class="start" onclick="startGme()">
+                 START GAME
+             </button><br>
+
+            <button class ="restart" onclick="restart()">
+                RESTART GAME
+            </button>
+             <button class ="withdraw" onclick="withdrawFund()">
+                WALK AWAY
+            </button>
+             <button class="newcard" onclick="drwNew()">
+                 DRAW NEW CARD
+             </button>
+             <button class="fund" onclick="fund()">
+                 FUND ACCOUNT
+             </button>
+             <br><br><br><br><br>
+             <button class="continue" onclick="restart()">
+                 CONTINUE PLAYING
+             </button>
+              <button class="endgame" onclick="endGame()">
+                    END GAME
+             </button>
+             <br>
+        </div>
+
+        <div class="item-footer">
+
+             <input readonly class="earnings" type="text" value="$0">
+
+        </div>
+
+    </div>
+</div>
+    <script src="js/blackjack.js"></script>
+</body>
+</html>
